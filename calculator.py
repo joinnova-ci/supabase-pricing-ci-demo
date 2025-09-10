@@ -1,5 +1,7 @@
 """Calculator module with comprehensive math functions."""
 
+import math
+
 def add(a, b):
     """Add two numbers."""
     return a + b
@@ -34,7 +36,7 @@ def square_root(a):
     """Get square root of a positive number."""
     if a < 0:
         raise ValueError("Cannot compute square root of negative number")
-    return a ** 0.5
+    return math.sqrt(a)
 
 def factorial(n):
     """Calculate factorial of a non-negative integer."""
